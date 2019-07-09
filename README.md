@@ -1,5 +1,7 @@
 # htmlwebpackplugin-aspnetcore3
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/alexdresko/htmlwebpackplugin-aspnetcore3.svg)](https://greenkeeper.io/)
+
 Read the blog post [here](https://www.alexdresko.com/2019/07/09/htmlwebpackplugin-asp-net-core-3/).
 
 My goal with this experiment was to set up a Razor page that was generated from HtmlWebpackPlugin in ASP.NET Core 3.
