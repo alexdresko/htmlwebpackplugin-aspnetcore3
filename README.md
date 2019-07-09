@@ -1,0 +1,1 @@
+# htmlwebpackplugin-aspnetcore3
