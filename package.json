@@ -1,0 +1,29 @@
+{
+  "name": "jss-hwpp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexdresko/htmlwebpackplugin-aspnetcore3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexdresko/htmlwebpackplugin-aspnetcore3/issues"
+  },
+  "homepage": "https://github.com/alexdresko/htmlwebpackplugin-aspnetcore3#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "dependencies": {
+    "aspnet-webpack": "^3.0.0"
+  }
+}
