@@ -1,0 +1,46 @@
+@using System.IO
+
+@{
+Layout = "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title><%= htmlWebpackPlugin.options.title || 'Webpack App'%></title>
+
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+</head>
+
+<body>
+    <h1>TADA!</h1>
+	<p>If you didn't see a popup, it didn't work</p>
+	<h2>Expected</h2>
+	<ol>
+	<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+	    <li><%= htmlWebpackPlugin.files.chunks[chunk].entry %></li>
+    <% } %>
+    </ol>
+
+	<h2>Actual</h2>
+	<ol>
+	    @{
+	        foreach (var file in Directory.GetFiles("./wwwroot/dist"))
+	        {
+	            <li>@file</li>
+	        }
+	    }
+    </ol>
+
+	<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
+
+    <% if (htmlWebpackPlugin.options.devServer) { %>
+    <script src="<%= htmlWebpackPlugin.options.devServer%>/webpack-dev-server.js"></script>
+    <% } %>
+</body>
+
+</html>
