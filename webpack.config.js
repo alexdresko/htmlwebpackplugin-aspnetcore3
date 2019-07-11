@@ -13,7 +13,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './Views/Home/Index.ejs',
             filename: '../../Views/Home/Index.cshtml',
-            inject: false
+            inject: false,
+            minify: false
         })
     ]
 };
